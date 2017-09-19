@@ -1,8 +1,8 @@
 P=? [ F success ]
 
-P<=0.8 [F success ]
+P<=0.8 [ F success ]
 
-P>=0.6 [F success ]
+P>=0.6 [ F success ]
 
-P>=0.7 [F success ]
+P>=1.0 [ F "finished" ]
 
