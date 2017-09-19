@@ -13,9 +13,9 @@ const int w8 = 1;
 const int nsteps = 8;
 
 // probabilities of checking that guess is smaller than secret
-const double p1 = 0.99;
+const double p1 = 0.9994;
 // probabilities of checking that guess is bigger than secret
-const double p2 = 0.95;
+const double p2 = 0.9994;
 
 module attacker
 
