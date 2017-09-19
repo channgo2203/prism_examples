@@ -1,0 +1,84 @@
+void attacker() {
+	int secret, secretMin, success;
+	secretMin = 0;
+	success = 0;
+	assume secret >= 0 & secret <= 255;
+
+	// step 1
+	if secretMin + 128 <= secret 
+			secretMin = secretMin + 128
+		[p_1]
+			secretMin = secretMin + 0;
+	else
+			secretMin = secretMin + 0
+		[p_2]
+			secretMin = secretMin + 128;
+	// step 2
+	if secretMin + 64 <= secret 
+			secretMin = secretMin + 64
+		[p_1]
+			secretMin = secretMin + 0;
+	else
+			secretMin = secretMin + 0
+		[p_2]
+			secretMin = secretMin + 64;
+	// step 3
+	if secretMin + 32 <= secret 
+			secretMin = secretMin + 32
+		[p_1]
+			secretMin = secretMin + 0;
+	else
+			secretMin = secretMin + 0
+		[p_2]
+			secretMin = secretMin + 32;
+	// step 4
+	if secretMin + 16 <= secret 
+			secretMin = secretMin + 16
+		[p_1]
+			secretMin = secretMin + 0;
+	else
+			secretMin = secretMin + 0
+		[p_2]
+			secretMin = secretMin + 16;
+	// step 5
+	if secretMin + 8 <= secret 
+			secretMin = secretMin + 8
+		[p_1]
+			secretMin = secretMin + 0;
+	else
+			secretMin = secretMin + 0
+		[p_2]
+			secretMin = secretMin + 8;
+	// step 6
+	if secretMin + 4 <= secret 
+			secretMin = secretMin + 4
+		[p_1]
+			secretMin = secretMin + 0;
+	else
+			secretMin = secretMin + 0
+		[p_2]
+			secretMin = secretMin + 4;
+	// step 7
+	if secretMin + 2 <= secret 
+			secretMin = secretMin + 2
+		[p_1]
+			secretMin = secretMin + 0;
+	else
+			secretMin = secretMin + 0
+		[p_2]
+			secretMin = secretMin + 2;
+	// step 8
+	if secretMin + 1 <= secret 
+			secretMin = secretMin + 1
+		[p_1]
+			secretMin = secretMin + 0;
+	else
+			secretMin = secretMin + 0
+		[p_2]
+			secretMin = secretMin + 1;
+	// check
+	if secretMin = secret 
+		success = 1;
+	else
+		success = 0;
+}
