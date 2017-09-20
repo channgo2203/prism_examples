@@ -1,94 +1,75 @@
-PRISM
-=====
-
-Version: 4.4.beta
-Date: Tue Sep 19 10:50:50 EDT 2017
-Hostname: Chans-iMac.wv.cc.cmu.edu
-Memory limits: cudd=1g, java(heap)=910.5m
-
-Type:        DTMC
-Modules:     attacker 
-Variables:   secretMin secret steps check done success 
-
----------------------------------------------------------------------
 
 Building model...
 
-Warning: Guard for command 17 of module "attacker" overlaps with previous commands.
-
-Warning: Guard for command 18 of module "attacker" overlaps with previous commands.
-
-Warning: Guard for command 19 of module "attacker" overlaps with previous commands.
-
 Computing reachable states...
 
-Reachability (BFS): 265 iterations in 0.58 seconds (average 0.002200, setup 0.00)
+Reachability (BFS): 10 iterations in 0.01 seconds (average 0.001100, setup 0.00)
 
-Time for model construction: 1.899 seconds.
+Time for model construction: 1.311 seconds.
 
 Type:        DTMC
-States:      229247 (256 initial)
-Transitions: 555901
+States:      196352 (256 initial)
+Transitions: 261632
 
-Transition matrix: 5587 nodes (17 terminal), 555901 minterms, vars: 22r/22c
+Transition matrix: 4467 nodes (4 terminal), 261632 minterms, vars: 22r/22c
 
 ---------------------------------------------------------------------
 
 Model checking: P=? [ F success ]
 
-Prob0: 257 iterations in 0.56 seconds (average 0.002195, setup 0.00)
+Prob0: 10 iterations in 0.02 seconds (average 0.002100, setup 0.00)
 
-Prob1: 256 iterations in 0.54 seconds (average 0.002121, setup 0.00)
+Prob1: 2 iterations in 0.01 seconds (average 0.003000, setup 0.00)
 
-yes = 33663, no = 96896, maybe = 98688
+yes = 512, no = 193792, maybe = 2048
 
 Computing remaining probabilities...
 Engine: Hybrid
 
-Building hybrid MTBDD matrix... [levels=22, nodes=9642] [452.0 KB]
-Adding explicit sparse matrices... [levels=13, num=681, compact] [731.7 KB]
-Creating vector for diagonals... [dist=5, compact] [447.8 KB]
-Creating vector for RHS... [dist=2, compact] [447.8 KB]
-Allocating iteration vectors... [2 x 1.7 MB]
-TOTAL: [5.5 MB]
+Building hybrid MTBDD matrix... [levels=22, nodes=4483] [210.1 KB]
+Adding explicit sparse matrices... [levels=22, num=1, compact] [207.8 KB]
+Creating vector for diagonals... [dist=1, compact] [383.5 KB]
+Creating vector for RHS... [dist=2, compact] [383.5 KB]
+Allocating iteration vectors... [2 x 1.5 MB]
+TOTAL: [4.2 MB]
 
 Starting iterations...
 
-Jacobi: 259 iterations in 0.45 seconds (average 0.001568, setup 0.04)
+Jacobi: 9 iterations in 0.02 seconds (average 0.000667, setup 0.01)
 
-Range of values over initial states: [0.6318289821800591,1.0]
+Range of values over initial states: [0.9529959942858481,0.9529959942858481]
 
-Time for model checking: 1.542 seconds.
+Time for model checking: 0.053 seconds.
 
-Result: [0.6318289821800591,1.0] (range of values over initial states)
+Result: [0.9529959942858481,0.9529959942858481] (range of values over initial states)
 
 ---------------------------------------------------------------------
 
 Model checking: P<=0.8 [ F success ]
 
-Prob0: 257 iterations in 0.69 seconds (average 0.002700, setup 0.00)
+Prob0: 10 iterations in 0.01 seconds (average 0.001100, setup 0.00)
 
-Prob1: 256 iterations in 0.49 seconds (average 0.001898, setup 0.00)
+Prob1: 2 iterations in 0.00 seconds (average 0.000500, setup 0.00)
 
-yes = 33663, no = 96896, maybe = 98688
+yes = 512, no = 193792, maybe = 2048
 
 Computing remaining probabilities...
 Engine: Hybrid
 
-Building hybrid MTBDD matrix... [levels=22, nodes=9642] [452.0 KB]
-Adding explicit sparse matrices... [levels=13, num=681, compact] [731.7 KB]
-Creating vector for diagonals... [dist=5, compact] [447.8 KB]
-Creating vector for RHS... [dist=2, compact] [447.8 KB]
-Allocating iteration vectors... [2 x 1.7 MB]
-TOTAL: [5.5 MB]
+Building hybrid MTBDD matrix... [levels=22, nodes=4483] [210.1 KB]
+Adding explicit sparse matrices... [levels=22, num=1, compact] [207.8 KB]
+Creating vector for diagonals... [dist=1, compact] [383.5 KB]
+Creating vector for RHS... [dist=2, compact] [383.5 KB]
+Allocating iteration vectors... [2 x 1.5 MB]
+TOTAL: [4.2 MB]
 
 Starting iterations...
 
-Jacobi: 259 iterations in 0.42 seconds (average 0.001459, setup 0.04)
+Jacobi: 9 iterations in 0.02 seconds (average 0.001222, setup 0.01)
 
-Property satisfied in 163 of 256 initial states.
+Property satisfied in 0 of 256 initial states.
 
-Time for model checking: 1.543 seconds.
+Time for model checking: 0.067 seconds.
 
 Result: false (property not satisfied in all initial states)
 
@@ -96,29 +77,29 @@ Result: false (property not satisfied in all initial states)
 
 Model checking: P>=0.6 [ F success ]
 
-Prob0: 257 iterations in 0.61 seconds (average 0.002385, setup 0.00)
+Prob0: 10 iterations in 0.01 seconds (average 0.001000, setup 0.00)
 
-Prob1: 256 iterations in 0.51 seconds (average 0.001996, setup 0.00)
+Prob1: 2 iterations in 0.00 seconds (average 0.000500, setup 0.00)
 
-yes = 33663, no = 96896, maybe = 98688
+yes = 512, no = 193792, maybe = 2048
 
 Computing remaining probabilities...
 Engine: Hybrid
 
-Building hybrid MTBDD matrix... [levels=22, nodes=9642] [452.0 KB]
-Adding explicit sparse matrices... [levels=13, num=681, compact] [731.7 KB]
-Creating vector for diagonals... [dist=5, compact] [447.8 KB]
-Creating vector for RHS... [dist=2, compact] [447.8 KB]
-Allocating iteration vectors... [2 x 1.7 MB]
-TOTAL: [5.5 MB]
+Building hybrid MTBDD matrix... [levels=22, nodes=4483] [210.1 KB]
+Adding explicit sparse matrices... [levels=22, num=1, compact] [207.8 KB]
+Creating vector for diagonals... [dist=1, compact] [383.5 KB]
+Creating vector for RHS... [dist=2, compact] [383.5 KB]
+Allocating iteration vectors... [2 x 1.5 MB]
+TOTAL: [4.2 MB]
 
 Starting iterations...
 
-Jacobi: 259 iterations in 0.42 seconds (average 0.001475, setup 0.04)
+Jacobi: 9 iterations in 0.02 seconds (average 0.001000, setup 0.01)
 
 Property satisfied in 256 of 256 initial states.
 
-Time for model checking: 1.516 seconds.
+Time for model checking: 0.053 seconds.
 
 Result: true (property satisfied in all initial states)
 
@@ -128,14 +109,14 @@ Model checking: P>=1.0 [ F "finished" ]
 
 Probability bound in formula is 0/1 so not computing exact probabilities...
 
-Prob0: 10 iterations in 0.02 seconds (average 0.002400, setup 0.00)
+Prob0: 10 iterations in 0.01 seconds (average 0.001500, setup 0.00)
 
-Prob1: 1 iterations in 0.00 seconds (average 0.000000, setup 0.00)
+Prob1: 1 iterations in 0.00 seconds (average 0.001000, setup 0.00)
 
-yes = 229247, no = 0, maybe = 0
+yes = 196352, no = 0, maybe = 0
 
 Property satisfied in 256 of 256 initial states.
 
-Time for model checking: 0.034 seconds.
+Time for model checking: 0.013 seconds.
 
 Result: true (property satisfied in all initial states)
